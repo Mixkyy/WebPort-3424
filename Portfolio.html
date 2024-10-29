@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.add('fade-in');
+        });
+    </script>
+</head>
+<body>
+ 
+    <header id="header">
+        <h1>Panyakorn Lohaviboonsap</h1>
+        <div class="header-buttons">
+            <a href="#about" class="enter-button">About Me</a>
+            <a href="#education" class="enter-button">Education</a>
+            <a href="#skills" class="enter-button">Skills</a>
+            <a href="#contact" class="enter-button">Contact</a>
+        </div>
+    </header>
+
+    <nav id="nav" class="hidden">
+        <div class="nav-left">
+            <h1>Panyakorn Lohaviboonsap</h1>
+        </div>
+        <div class="nav-right"> <!-- Navigation buttons on the right -->
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="profile.jpg" alt="Profile Picture">
+            <div class="about-text">
+                <p>My name is Panyakorn Lohaviboonsap, my nickname is Micky. I'm a student at KMUTT (King Mongkut's University of Technology Thonburi). I major in Computer Engineering (International) and I'm currently in my first year.</p>
+            </div>
+        </div> 
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-item">
+                <h3>Suwawan Kindergarten School</h3>
+                <img src="suwawan.jpg" alt="Suwawan Kindergarten School" class="school-image">
+                <p style="font-style: italic;">Kindergarten School</p>
+            </div>
+            <div class="education-item">
+                <h3>Sarasas Ektra School</h3>
+                <img src="sarasas.jpg" alt="Sarasas Ektra School" class="school-image">
+                <p style="font-style: italic;">Primary to Secondary</p>
+            </div>
+        </div>
+        <div class="education-center">
+            <div class="education-item">
+                <h3>King Mongkut's University of Technology Thonburi (KMUTT)</h3>
+                <img src="kmutt.jpg" alt="KMUTT" class="school-image">
+                <p style="font-style: italic;">Undergraduate</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-item">
+                <h3>Programming</h3>
+                <p>C</p>
+                <p>HTML</p>
+                <p>CSS</p>
+            </div>
+            <div class="skills-item">
+                <h3>Design</h3>
+                <p>Canva</p>
+                <p>Photoshop</p>
+                <p>Lightroom</p>
+            </div>
+            <div class="skills-item">
+                <h3>Music</h3>
+                <p>Piano</p>
+                <p>Guitar</p>
+                <p>Singing</p>
+            </div>
+            <div class="skills-item">
+                <h3>Sports</h3>
+                <p>Badminton</p>
+                <p>Football</p>
+                <p>Basketball</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-box">
+            <p>Email: <a href="mailto:panyakorn141141@gmail.com" style="color: #ffffff;">panyakorn141141@gmail.com</a></p>
+            <p>Phone: <a style="color: #ffffff;">081-919-3322</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/micky.pyk" style="color: #ffffff;">@micky.pyk</a></p>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+    
+    <script>
+        window.onscroll = function() {toggleStickyNav()};
+    
+        function toggleStickyNav() {
+            const nav = document.querySelector('nav');
+            const header = document.querySelector('header');
+            const stickyPoint = header.offsetHeight;
+    
+            if (window.pageYOffset > stickyPoint) {
+                nav.classList.add("visible");
+            } else {
+                nav.classList.remove("visible");
+            }
+        }
+    </script>
+</body>
+</html>
